@@ -21,7 +21,7 @@ node_modules/
 /_site
 
 # ignore images directory
-/images
+#/images
 
 # ignore OS generated files
 ehthumbs.db
