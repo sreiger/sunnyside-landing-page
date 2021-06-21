@@ -1,0 +1,108 @@
+:root {
+    --ff-body: 'Barlow', sans-serif;
+    --ff-heading: 'Fraunces', serif;
+    --clr-primary-400: w;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, 
+h1,
+h2,
+h3,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+body {
+    font-family: var(--ff-body);
+    font-weight: 300px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #3ebeff;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding-top: 25px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color:#222;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.header-img {
+    width: 80%;
+}
+
+.egg {
+    width: 50%;
+
+}
